@@ -54,9 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7f594eb33db6bec2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "readme.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DEVOPS/01_Deploy Laravel dengan GITLAB CI CD.md",
+                "file": "readme.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DEVOPS/01_Deploy Laravel dengan GITLAB CI CD.md",
+                "file": "readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DEVOPS/01_Deploy Laravel dengan GITLAB CI CD.md"
+                "file": "readme.md"
               }
             }
           }
@@ -173,13 +185,13 @@
     "direction": "horizontal",
     "width": 299.5
   },
-  "active": "456ca36f01bfa6ca",
+  "active": "e397fb272d4e1086",
   "lastOpenFiles": [
-    "2022-10-31.md",
+    "readme.md",
     "DEVOPS/01_Deploy Laravel dengan GITLAB CI CD.md",
+    "2022-10-31.md",
     "DEVOPS/cek.md",
     "DEVOPS/cek2.md",
-    "Untitled.md",
     "DEVOPS/01_Deploy Laravel Dengan GITLAB.md",
     "2022-10-30.md",
     "devlog.md",
