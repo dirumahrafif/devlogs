@@ -134,10 +134,11 @@ VAR_FILE_HTACCESS: $FILE_HTACCESS #dari point 5 di atas
 
 ### Cara mendapatkan Token User
 Buka halaman profile
-!(gambar2)[https://raw.githubusercontent.com/dirumahrafif/devlogs/main/DEVOPS/images/2.png]
+![gambar2](https://raw.githubusercontent.com/dirumahrafif/devlogs/main/DEVOPS/images/2.png)
 Masuk ke menu access token:
 - masukkan <code>token name</code>
 - <code>expiration date</code> dikosongkan saja
 - <code>select scopes</code> saya checklist semua
 - Kemudian klik tombol **Create personal access token**
-!(gambar3)[https://raw.githubusercontent.com/dirumahrafif/devlogs/main/DEVOPS/images/3.png]
+
+![gambar3](https://raw.githubusercontent.com/dirumahrafif/devlogs/main/DEVOPS/images/3.png)
