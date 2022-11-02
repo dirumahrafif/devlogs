@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DEVOPS/readme.md.md",
+                "file": "DEVOPS/readme.md",
                 "mode": "source",
                 "source": false
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DEVOPS/readme.md.md",
+                "file": "DEVOPS/readme.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,7 +179,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DEVOPS/readme.md.md",
+                "file": "DEVOPS/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -202,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DEVOPS/readme.md.md"
+                "file": "DEVOPS/readme.md"
               }
             }
           }
@@ -213,7 +213,7 @@
     "direction": "horizontal",
     "width": 299.5
   },
-  "active": "00c7ba7fdc32941f",
+  "active": "e397fb272d4e1086",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "DEVOPS/01_Deploy Laravel dengan GITLAB CI CD.md",
