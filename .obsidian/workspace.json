@@ -35,8 +35,12 @@
             "id": "00c7ba7fdc32941f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "DEVOPS/readme.md.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
@@ -158,6 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "DEVOPS/readme.md.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,6 +179,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "DEVOPS/readme.md.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -195,7 +201,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "DEVOPS/readme.md.md"
+              }
             }
           }
         ],
@@ -205,10 +213,10 @@
     "direction": "horizontal",
     "width": 299.5
   },
-  "active": "e397fb272d4e1086",
+  "active": "00c7ba7fdc32941f",
   "lastOpenFiles": [
-    "DEVOPS/01_Deploy Laravel dengan GITLAB CI CD.md",
     "conflict-files-obsidian-git.md",
+    "DEVOPS/01_Deploy Laravel dengan GITLAB CI CD.md",
     "images/1.jpg.md",
     "readme.md",
     "2022-10-31.md",
