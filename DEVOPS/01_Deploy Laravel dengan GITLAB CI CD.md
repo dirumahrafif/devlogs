@@ -65,11 +65,12 @@ groups
 Jalankan perintah berikut ini untuk:
 ```
 sudo adduser namauser
+chown -R namauser:namauser /lokasi
 sudo setfacl -R -m u:namauser:rwx /lokasi
-```
-Jalankan perintah jika ACL belum ada:
-```
-sudo apt install acl
+
+# set permission yang perlu di folder tujuan, saat sudah ada projectnya
+chmod 777 -R /lokasi/storage
+chmod 777 -R /lokasi/public
 ```
 login ke aplikasi sebagai namauser:
 ```
@@ -83,14 +84,30 @@ copy isi dari public key ke authorized key:
 ```
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ```
-## 4. Buka project yang ada di GITLAB
+## 4. Install PHP MySQL Apache dengan Docker & Install Lets Encrypt
+```
+# masuk folder, buka terminal di lokasi folder
+git clone https://github.com/dirumahrafif/docker-apache-php8-mysql.git .
+docker-compose up -d
+```
+Proses install letsencrypt
+```
+# masuk ke container webserver
+docker exec -it webserver bash
+certbot --apache -d resumerafif.com -m dirumahrafif@gmail.com
+certbot --apache -d resumerafif.com -d www.resumerafif.com -m dirumahrafif@gmail.com
+```
+## 5. Buka project yang ada di GITLAB
+### Menambahkan Variabel
 Buka bagian settings > CI/CD > Variables kemudian tambahkan variabel, misalnya diberi nama SSH_PRIVATE_KEY, dan isi didapatkan dari 
 ```
 # pastikan sudah login sebagai user yang diberi akses ke folder aplikasi
 cat ~/.ssh/id_rsa
 ```
 
-## 5. Buat Runner
+Tambahkan variabel
+![[1.png]]
+## 6. Buat Runner
 ```
 docker run -d --name gitlab-runner --restart always \ -v /srv/gitlab-runner/config:/etc/gitlab-runner \ -v /var/run/docker.sock:/var/run/docker.sock \ gitlab/gitlab-runner:v14.7.0
 ```
@@ -102,9 +119,25 @@ docker exec -it gitlab-runner gitlab-runner register
 ```
 sudo usermod -aG docker namauser
 ```
-## 6. Buka project Laravel
-Tambahkan file .gitlab-ci.yml, ambil contoh di file berikut  
-Masukkan beberapa variabel yang diperlukan.
-Buat access token di profile gitlab untuk proses git clone tanpa perlu memasukkan password.
+## 7. Buka project Laravel
+### Tambahkan file .gitlab-ci.yml
+File .gitlab-ci.yml, ambil contoh di [file berikut ini](https://gist.githubusercontent.com/dirumahrafif/71e5d2ebeada6a5be126cca638651461/raw/2fb47747a17d3a0c73de7001948e587340bf89b3/.gitlab-ci.yml)
+```
+VAR_DIREKTORI: "/home/rafifresume/APLIKASI/www"
+VAR_GIT_URL_TANPA_HTTP: "gitlab.com/dirumahrafif/namauser.git"
+VAR_CLONE_KEY: "xxx" # diambil dari halaman profile (lihat di bawah)
+VAR_USER: "namauser" #user yang sudah diberi akses
+VAR_IP: "xxx" #ip server
+VAR_FILE_ENV: $FILE_ENV #dari point 5 di atas
+VAR_FILE_HTACCESS: $FILE_HTACCESS #dari point 5 di atas
+```
 
-
+### Cara mendapatkan Token User
+Buka halaman profile
+![[2.png]]
+Masuk ke menu access token:
+- masukkan <code>token name</code>
+- <code>expiration date</code> dikosongkan saja
+- <code>select scopes</code> saya checklist semua
+- Kemudian klik tombol **Create personal access token**
+![[3.png]]
