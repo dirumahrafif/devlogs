@@ -65,6 +65,9 @@ groups
 Jalankan perintah berikut ini untuk:
 ```
 sudo adduser namauser
+#silakan install acl jika belum punya
+sudo apt install acl
+
 sudo setfacl -R -m u:namauser:rwx /lokasi
 
 # set permission yang perlu di folder tujuan, saat sudah ada projectnya
