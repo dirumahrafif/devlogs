@@ -105,8 +105,8 @@ Buka bagian settings > CI/CD > Variables kemudian tambahkan variabel, misalnya d
 cat ~/.ssh/id_rsa
 ```
 
-Tambahkan variabel
-![[1.png]]
+
+![Tambahkan variabel](https://raw.githubusercontent.com/dirumahrafif/devlogs/main/DEVOPS/images/1.png)
 ## 6. Buat Runner
 ```
 docker run -d --name gitlab-runner --restart always \ -v /srv/gitlab-runner/config:/etc/gitlab-runner \ -v /var/run/docker.sock:/var/run/docker.sock \ gitlab/gitlab-runner:v14.7.0
@@ -134,10 +134,10 @@ VAR_FILE_HTACCESS: $FILE_HTACCESS #dari point 5 di atas
 
 ### Cara mendapatkan Token User
 Buka halaman profile
-![[2.png]]
+!(gambar2)[https://raw.githubusercontent.com/dirumahrafif/devlogs/main/DEVOPS/images/2.png]
 Masuk ke menu access token:
 - masukkan <code>token name</code>
 - <code>expiration date</code> dikosongkan saja
 - <code>select scopes</code> saya checklist semua
 - Kemudian klik tombol **Create personal access token**
-![[3.png]]
+!(gambar3)[https://raw.githubusercontent.com/dirumahrafif/devlogs/main/DEVOPS/images/3.png]
