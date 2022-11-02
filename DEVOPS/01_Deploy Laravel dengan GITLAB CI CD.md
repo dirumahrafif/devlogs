@@ -1,4 +1,4 @@
-# Proses Instal PHP,MYSQL,APACHE di BiznetGio product NeoLite
+# Proses Melakukan Deploy Laravel dengan GITLAB CI CD ke VPS
 ## 1. Enable SSH Public Key
 
 Login lewat open console  
