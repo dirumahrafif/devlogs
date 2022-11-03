@@ -112,10 +112,10 @@ File htaccess bisa diambil dari [contoh file htaccess](https://gist.githubuserco
 ![Tambahkan variabel](https://raw.githubusercontent.com/dirumahrafif/devlogs/main/DEVOPS/images/1.png)
 ## 6. Buat Runner
 ```
-docker run -d --name gitlab-runner --restart always \   
--v /srv/gitlab-runner/config:/etc/gitlab-runner \  
--v /var/run/docker.sock:/var/run/docker.sock \  
-gitlab/gitlab-runner:v14.7.0
+docker run -d --name gitlab-runner --restart always \  
+  -v /srv/gitlab-runner/config:/etc/gitlab-runner \  
+  -v /var/run/docker.sock:/var/run/docker.sock \  
+  gitlab/gitlab-runner:latest
 ```
 Daftarkan runner
 ```
