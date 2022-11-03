@@ -107,6 +107,8 @@ Buka bagian settings > CI/CD > Variables kemudian tambahkan variabel, misalnya d
 cat ~/.ssh/id_rsa
 ```
 
+File htaccess bisa diambil dari [contoh file htaccess](https://gist.githubusercontent.com/dirumahrafif/71e5d2ebeada6a5be126cca638651461/raw/2fb47747a17d3a0c73de7001948e587340bf89b3/.htaccess)
+
 ![Tambahkan variabel](https://raw.githubusercontent.com/dirumahrafif/devlogs/main/DEVOPS/images/1.png)
 ## 6. Buat Runner
 ```
