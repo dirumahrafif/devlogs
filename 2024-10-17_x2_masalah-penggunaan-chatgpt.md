@@ -1,1 +1,0 @@
-https://hechingerreport.org/kids-chatgpt-worse-on-tests/?ref=dailydev
